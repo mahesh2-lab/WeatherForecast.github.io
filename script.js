@@ -1,9 +1,22 @@
 const error = document.getElementById("error");
+
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(wetherDataFetch);
+  } else {
+  alert("Geolocation is not supported by this browser.")
+  }
+}
+
+getLocation();
+
+
 async function wetherDataFetch() {
     try {
         let cityName = document.getElementById("EnterCityName").value;
         let response = await fetch(
-            `https://api.weatherapi.com/v1/current.json?key=63c9bdb635dd496fbd085858242209&q= ${cityName}`
+            `https://api.weatherapi.com/v1/current.json?key=63c9bdb635dd496fbd085858242209&q=${position.coords.latitude},${position.coords.longitude}`
         );
         const data = await response.json();
         console.log(data);
