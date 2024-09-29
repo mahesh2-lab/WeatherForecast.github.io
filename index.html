@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wether</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="body">
+        <section class="container">
+            <center>
+                <input id="EnterCityName" type="text" placeholder="ENTER CITY NAME">
+                <br>
+                <button id="checkWether" onclick="wetherDataFetch()">
+                    Check Wether
+                </button>
+                <br>
+            </center>
+            <center>
+                <section id="wetherData">
+                    <h1 id="error">Enter correct city name</h1>
+                    <h1 class="data" id="cityName"></h1>
+                    <h2 class="data" id="temp"></h2>
+                    <img class="data" id="picture" src="z" alt>
+                    <section class="data" id="date_clock">
+                        <div class="data" id="date"></div>
+                        <div class="data" id="clock"></div>
+                    </section>
+                    <h2 class="data" id="text"></h2>
+                    <h2 class="data" id="feelslike_c"></h2>
+                </section>
+            </center>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

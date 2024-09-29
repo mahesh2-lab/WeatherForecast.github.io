@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("z.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid rgba(211, 241, 11, 0.16);
+    height: 650px;
+    width: 500px;
+    box-shadow: 5px 5px 7px hsl(60, 100%, 51%);
+    /* background-image: url("v.jpg"); */
+    background-size:contain ;
+
+    /* background: linear-gradient(hsla(0, 100%, 48%, 0.052), 
+            hsla(194, 100%, 54%, 0.037)); */
+    border-radius: 15px;
+}
+
+#EnterCityName {
+    background-image: url("z.jpg");
+    background-size: contain;
+    /* background:linear-gradient(hsla(0, 100%, 50%, 0.748), hsl(59, 100%, 50%)); */
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    /* color: rgb(132, 134, 8)     ; */
+    margin: 10px 15px;
+    padding: 10px;
+    color: white;
+
+    text-transform: capitalize;
+}
+
+#checkWether {
+    background-image: url("b.jpg");
+    background-size: contain;
+    font-family: 'Times New Roman', Times, serif;
+    /* background:linear-gradient(hsla(0, 100%, 50%, 0.748), hsl(59, 100%, 50%)); */
+    border-radius: 5px;
+    font-weight: bold;
+    /* color: rgb(132, 134, 8); */
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#wetherData {
+    /* background:linear-gradient(hsla(0, 100%, 50%, 0.821), hsla(187, 100%, 50%, 0.655)); */
+    border: 2px solid rgba(241, 11, 11, 0.333);
+    box-shadow: 5px 5px 7px hsla(198, 92%, 46%, 0.327);
+    height: 480px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    align-items: center;
+    color: aliceblue;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#cityName {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#temp {
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#picture {
+    color: white;
+    /* width: 120px; */
+    image-resolution: from-image;
+}
+
+#date_clock {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+#error {
+    color: rgb(128, 42, 42);
+    font-size: 3.5rem;
+    text-align: center;
+    display: none;
+    text-transform: capitalize;
+}
