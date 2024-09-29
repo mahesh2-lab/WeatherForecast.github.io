@@ -12,7 +12,7 @@ function getLocation() {
 getLocation();
 
 
-async function wetherDataFetch() {
+async function wetherDataFetch(position) {
     try {
         let cityName = document.getElementById("EnterCityName").value;
         let response = await fetch(
